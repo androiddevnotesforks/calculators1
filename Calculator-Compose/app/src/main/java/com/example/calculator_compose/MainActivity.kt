@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                                 Text(text = "Calculator-Compose")
                             },
                             backgroundColor = MaterialTheme.colors.primary,
-                            windowInsets = WindowInsets.Companion.statusBars
+                            windowInsets = WindowInsets.statusBars
                         )
                     },
                     content = { padding ->

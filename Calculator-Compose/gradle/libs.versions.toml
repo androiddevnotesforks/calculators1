@@ -1,12 +1,12 @@
 [versions]
-androidGradlePlugin = "8.13.0"
-compose = "1.9.4"
-kotlin = "2.2.21"
+androidGradlePlugin = "9.0.0"
+compose = "1.10.3"
+kotlin = "2.3.10"
 coreKtx = "1.17.0"
 appcompat = "1.7.1"
 material = "1.13.0"
-lifeCycleRuntimeKtx = "2.9.4"
-activityCompose = "1.11.0"
+lifeCycleRuntimeKtx = "2.10.0"
+activityCompose = "1.12.4"
 
 junit = "4.13.2"
 
@@ -34,5 +34,4 @@ ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", v
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

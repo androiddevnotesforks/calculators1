@@ -1,11 +1,11 @@
 [versions]
-androidGradlePlugin = "8.13.0"
-kotlin = "2.2.21"
+androidGradlePlugin = "9.0.0"
+kotlin = "2.3.10"
 coreKtx = "1.17.0"
 appcompat = "1.7.1"
 material = "1.13.0"
 constraintLayout = "2.2.1"
-activityKtx = "1.11.0"
+activityKtx = "1.12.4"
 
 junit = "4.13.2"
 coreTesting = "2.2.0"
@@ -31,4 +31,3 @@ rules = { group = "androidx.test", name = "rules", version.ref = "rules" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

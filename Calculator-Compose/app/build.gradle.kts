@@ -3,7 +3,6 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.plugin.compose)
 }
 
@@ -36,9 +35,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlin {
-        jvmToolchain(17)
-    }
     buildFeatures.compose = true
 
     packaging {
@@ -47,6 +43,10 @@ android {
         }
     }
     namespace = "com.example.calculator_compose"
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {

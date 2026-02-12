@@ -3,7 +3,6 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -29,16 +28,20 @@ android {
         }
     }
 
-    viewBinding.isEnabled = true
+    buildFeatures {
+        viewBinding = true
+    }
+
     namespace = "com.example.calculator_view"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlin {
-        jvmToolchain(17)
-    }
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {
